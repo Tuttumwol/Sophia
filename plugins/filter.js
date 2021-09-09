@@ -47,7 +47,7 @@ Asena.addCommand({pattern: 'stop ?(.*)', fromMe: true, desc: Lang.STOP_DESC, don
     if (!del) {
         await message.client.sendMessage(message.jid,Lang.ALREADY_NO_FILTER, MessageType.text)
     } else {
-        await message.client.sendMessage(message.jid,Lang.DELETED, MessageType.text)
+        await message.client.sendMessage(message.jid,Lang.DELETED, 'myre'MessageType.text)
     }
 }));
 Asena.addCommand({on: 'text', fromMe: false }, (async (message, match) => {
